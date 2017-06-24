@@ -1,13 +1,13 @@
 {
-  "name": "sampleProject",
+  "name": "stryker-mocha-chai-poc",
   "version": "1.0.0",
-  "description": "",
+  "description": "POC",
   "main": "stryker.conf.js",
   "scripts": {
     "test": "node_modules/.bin/stryker run -c stryker.conf.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["stryker","mocha", "chai", "api"],
+  "author": "vnaraujo",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.0.2",
