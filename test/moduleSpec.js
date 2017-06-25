@@ -19,7 +19,7 @@ describe('module', function () {
         expect(moduleMath.isNegativeNumber(-2)).to.equal(true);
     });
 
-    it('Deve receber um valor false para número negativo', function () {
+    it('Deve receber um valor false para número positivo', function () {
          expect(moduleMath.isNegativeNumber(2)).to.equal(false);
     });
 });
