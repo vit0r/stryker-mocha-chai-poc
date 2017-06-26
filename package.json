@@ -2,9 +2,8 @@
   "name": "stryker-mocha-chai-poc",
   "version": "1.0.0",
   "description": "POC",
-  "main": "stryker.conf.js",
   "scripts": {
-    "test": "node_modules/.bin/stryker run -c stryker.conf.js"
+    "stryker-test": "node_modules/.bin/stryker run -c stryker.conf.js"
   },
   "keywords": ["stryker","mocha", "chai", "api"],
   "author": "vnaraujo",
