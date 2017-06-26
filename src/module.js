@@ -1,18 +1,18 @@
 'use strict';
 
-var sum = function (num1, num2) {
+var sum = (num1, num2) => {
     return num1 + num2;
 };
 
-var increment = function (number) {
+var increment = (number) => {
     return ++number;
 };
 
-var decrement = function (number) {
+var decrement = (number) => {
     return --number;
 };
 
-var isNegativeNumber = function (number) {
+var isNegativeNumber = (number) => {
     return number < 0 ? true : false;
 };
 
