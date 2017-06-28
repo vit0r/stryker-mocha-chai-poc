@@ -24,5 +24,7 @@ describe('module', () => {
         var isNegativeNumber = moduleMath.isNegativeNumber(number);
         expect(number).not.to.eql(0);
         expect(isNegativeNumber).to.equal(false);
+        expect(isNegativeNumber).not.to.be.null;
+        expect(isNegativeNumber).not.to.be.undefined;
     });
 });
