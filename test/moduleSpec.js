@@ -3,36 +3,43 @@ var moduleTest = require('../src/module');
 
 describe('Stryker Tests [ module ]', () => {
 
-    it('Soma dos dois números deve ser 15', () => {
+    it('Somar valores', () => {
         var numberOne = 10;
         var numberTwo = 5;
-        expect(moduleTest.sum(numberOne, numberTwo)).to.equal(15);
+        var expectedSum = 15;
+        var sum = moduleTest.sum(numberOne, numberTwo);
+        expect(sum).to.equal(expectedSum);
     });
 
-    it('O valor do incremento + 1 de 5 deve ser 6', () => {
+    it('Incrementar valor +1', () => {
         var number = 5;
-        var increment = 6;
-        expect(moduleTest.increment(number)).to.equal(increment);
+        var expectedIncrement = 6;
+        var increment = moduleTest.increment(number);
+        expect(increment).to.equal(expectedIncrement);
     });
 
-    it('O valor do decremento -1 de 2 deve ser 1', () => {
+    it('Decrementar valor -1', () => {
         var number = 2;
-        var decrement = 1;
-        expect(moduleTest.decrement(number)).to.equal(decrement);
+        var expectedDecrement = 1;
+        var decrement = moduleTest.decrement(number);
+        expect(decrement).to.equal(expectedDecrement);
     });
 
     it('Deve retornar verdadeiro para valor negativo', () => {
-        var negativeNumber = -2;
-        expect(moduleTest.isNegativeNumber(negativeNumber)).to.be.true;
-    });
-
-    xit('Deve retornar falso para valor zero', () => {
-        var neutralValue = 0;
-        expect(moduleTest.isNegativeNumber(neutralValue)).to.be.false;
+        var number = -2;
+        var isNegativeNumber = moduleTest.isNegativeNumber(number);
+        expect(isNegativeNumber).to.be.true;
     });
 
     it('Deve retornar falso para valor positivo', () => {
-        var positiveNumber = 4;
-        expect(moduleTest.isNegativeNumber(positiveNumber)).to.be.false;
+        var number = 2;
+        var isNegativeNumber = moduleTest.isNegativeNumber(number);
+        expect(isNegativeNumber).to.be.false;
+    });
+
+    xit('Deve retornar falso para valor zero', () => {
+        var number = 0;
+        var isNegativeNumber = moduleTest.isNegativeNumber(number);
+        expect(isNegativeNumber).to.be.false;
     });
 });
