@@ -15,7 +15,7 @@ describe('Stryker Tests [ module ]', () => {
         expect(moduleTest.increment(number)).to.equal(increment);
     });
 
-    it('O valo rdo incremento -1 de 2 deve ser 1', () => {
+    it('O valor do decremento -1 de 2 deve ser 1', () => {
         var number = 2;
         var decrement = 1;
         expect(moduleTest.decrement(number)).to.equal(decrement);
