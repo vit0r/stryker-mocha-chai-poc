@@ -13,7 +13,7 @@ var decrement = (number) => {
 };
 
 var isNegativeNumber = (number) => {
-    return number === Number.NEGATIVE_INFINITY ? true : false;
+    return number < 0 ? true : false;
 };
 
 var myModule = {
