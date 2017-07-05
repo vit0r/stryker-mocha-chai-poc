@@ -6,7 +6,7 @@ module.exports = function (config) {
     ],
     testFramework: 'mocha',
     testRunner: 'mocha',
-    reporter: ['progress', 'clear-text', 'dots', 'html', 'event-recorder'],
+    reporter: ['progress', 'clear-text', 'html', 'event-recorder'],
     coverageAnalysis: 'all',
     plugins: ['stryker-mocha-runner', 'stryker-html-reporter'],
     logLevel: 'trace'
